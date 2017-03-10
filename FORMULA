@@ -1,0 +1,8 @@
+name: tftpd                                                                                                                                          
+os: Debian, RedHat                                                                                                                                      
+os_family: Debian, RedHat                                                                                                                               
+version: 201703                                                                                                                                         
+release: 1                                                                                                                                              
+summary: Formula for installing and configuring tftpd server with xinetd for Ironic                                                                                                
+description: Formula for installing and configuring tftpd                                                                                            
+top_level_dir: tftpd
