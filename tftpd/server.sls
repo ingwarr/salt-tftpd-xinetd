@@ -28,8 +28,8 @@ tftpd-hpa:
 /tftpboot:
   file.recurse:
   - source: salt://tftpd/files/tftpboot
-  - user: ironic
-  - group: ironic
+  - user: {{ server.user }}
+  - group: {{ server.group }}
   
 
 xinetd:

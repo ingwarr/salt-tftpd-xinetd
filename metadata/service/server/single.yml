@@ -6,7 +6,7 @@ parameters:
   tftpd:
     server:
       enabled: true
-      bind:
-        address: 0.0.0.0
-      interface: eth0
-      tftp_path: /tftpboot
+      user: ironic
+      group: ironic
+      
+
