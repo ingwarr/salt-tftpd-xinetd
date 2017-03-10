@@ -1,0 +1,13 @@
+
+{% set server = salt['grains.filter_by']({
+    'Debian': {
+        'pkgs': ['tftpd-hpa', 'syslinux', 'xinetd'],
+        'services': ['xinetd', 'tfppd-hpa'],
+        'notification': False,
+    },
+    'RedHat': {
+        'pkgs': ['tftp-server', 'syslinux', 'xinetd'],
+        'services': ['xinetd', 'tftpd'],
+        'notification': False,
+    },
+}, merge=pillar.tftpd.get('server', {})) %}
